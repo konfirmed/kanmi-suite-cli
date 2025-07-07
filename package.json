@@ -1,0 +1,38 @@
+{
+  "name": "kanmi-suite-cli",
+  "version": "1.0.0",
+  "description": "Developer-first CLI tools for Google Search Console, GA4, and Looker Studio",
+  "main": "index.js",
+  "bin": {
+    "kanmi": "index.js"
+  },
+  "scripts": {
+    "install-all": "npm install -g kanmi-gsc-cli kanmi-ga4-cli kanmi-looker-cli",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "google-search-console",
+    "google-analytics",
+    "ga4",
+    "looker-studio",
+    "cli",
+    "seo",
+    "analytics",
+    "reporting"
+  ],
+  "author": "Kanmi Obasa",
+  "license": "MIT",
+  "peerDependencies": {
+    "kanmi-gsc-cli": "^1.1.0",
+    "kanmi-ga4-cli": "^1.0.1",
+    "kanmi-looker-cli": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knfrmd/kanmi-suite-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/knfrmd/kanmi-suite-cli/issues"
+  },
+  "homepage": "https://github.com/knfrmd/kanmi-suite-cli#readme"
+}
