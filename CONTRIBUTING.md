@@ -5,12 +5,14 @@ We welcome contributions to the KanmiSuite CLI! This document provides guideline
 ## 🤝 How to Contribute
 
 ### Reporting Issues
+
 - Use the GitHub Issues tab to report bugs or request features
 - Provide detailed information about the issue
 - Include steps to reproduce the problem
 - Specify which CLI tool(s) are affected
 
 ### Suggesting Enhancements
+
 - Open an issue with the "enhancement" label
 - Describe the feature you'd like to see
 - Explain why it would be useful
@@ -39,7 +41,7 @@ We welcome contributions to the KanmiSuite CLI! This document provides guideline
 
 ```bash
 # Clone the repository
-git clone https://github.com/knfrmd/kanmi-suite-cli.git
+git clone https://github.com/konfirmed/kanmi-suite-cli.git
 cd kanmi-suite-cli
 
 # Install dependencies
@@ -76,9 +78,9 @@ Before submitting a pull request:
 
 To contribute to the individual CLI tools:
 
-- **GSC CLI**: Visit [kanmi-gsc-cli repository](https://github.com/knfrmd/kanmi-gsc-cli)
-- **GA4 CLI**: Visit [kanmi-ga4-cli repository](https://github.com/knfrmd/kanmi-ga4-cli)
-- **Looker CLI**: Visit [kanmi-looker-cli repository](https://github.com/knfrmd/kanmi-looker-cli)
+- **GSC CLI**: Visit [kanmi-gsc-cli repository](https://github.com/konfirmed/kanmi-gsc-cli)
+- **GA4 CLI**: Visit [kanmi-ga4-cli repository](https://github.com/konfirmed/kanmi-ga4-cli)
+- **Looker CLI**: Visit [kanmi-looker-cli repository](https://github.com/konfirmed/kanmi-looker-cli)
 
 ## 🎯 Pull Request Guidelines
 
@@ -91,9 +93,10 @@ To contribute to the individual CLI tools:
 ## 📞 Questions?
 
 If you have questions about contributing:
+
 - Open an issue for discussion
 - Check existing issues and PRs
-- Contact the maintainer: [Kanmi Obasa](https://github.com/knfrmd)
+- Contact the maintainer: [Kanmi Obasa](https://github.com/konfirmed)
 
 ## 📄 License
 

@@ -1,14 +1,24 @@
 {
   "name": "kanmi-suite-cli",
-  "version": "1.0.0",
-  "description": "Developer-first CLI tools for Google Search Console, GA4, and Looker Studio",
+  "version": "2.0.0",
+  "description": "Enhanced CLI suite for Google Search Console, GA4, and Looker Studio with configuration management, colorized output, and advanced command routing",
   "main": "index.js",
   "bin": {
     "kanmi": "index.js"
   },
   "scripts": {
     "install-all": "npm install -g kanmi-gsc-cli kanmi-ga4-cli kanmi-looker-cli",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint index.js",
+    "lint:fix": "eslint index.js --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "prepublishOnly": "npm run lint && npm run test",
+    "validate": "npm run lint && npm run format:check && npm run test"
   },
   "keywords": [
     "google-search-console",
@@ -23,16 +33,26 @@
   "author": "Kanmi Obasa",
   "license": "MIT",
   "peerDependencies": {
-    "kanmi-gsc-cli": "^1.1.0",
     "kanmi-ga4-cli": "^1.0.1",
+    "kanmi-gsc-cli": "^1.1.0",
     "kanmi-looker-cli": "^1.0.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/knfrmd/kanmi-suite-cli.git"
+    "url": "git+https://github.com/konfirmed/kanmi-suite-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/knfrmd/kanmi-suite-cli/issues"
+    "url": "https://github.com/konfirmed/kanmi-suite-cli/issues"
   },
-  "homepage": "https://github.com/knfrmd/kanmi-suite-cli#readme"
+  "homepage": "https://github.com/konfirmed/kanmi-suite-cli#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }
